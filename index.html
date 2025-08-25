@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chowgaccha Hazi Sardar Mortoz Ali Secondary School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" class="logo">School Logo</a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">facilities</a></li>
+                    <li><a href="#">Developer of This Website</a></li>
+                </ul>
+            </div>   
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Chowgaccha Hazi Sardar Mortoz Ali Secondary School</h1>
+            <p>I am Dev Biswas, and this website is incomplete!</p>
+            <a class="hero-btn" href="https://devs-portfolioo.netlify.app/">Visit My Portfolio!</a>
+        </div>
+    </section>
+
+    <!--Facilite Section-->
+    <section class="about">
+    <h1>About School</h1>
+    <p>
+
+
+
+
+    </p>
+    
+     <div class="row">
+        <div class="about-col">
+            <h3>Chowgaccha Hazi Sardar Mortoz Ali Secondary School
+            </h3>
+            <p>Chowgaccha Hazi Sardar Mortoz Ali Secondary School, located in Chowgachha Upazila, Jessore District, Bangladesh, is dedicated to delivering quality education at the secondary level. Following the national curriculum, the school emphasizes academic excellence and personal growth. It plays a significant role in shaping the educational landscape of the area, offering a range of subjects to help students succeed in national examinations. The institution strives to create a disciplined and enriching learning environment, serving as a key educational establishment in its community.
+
+
+
+
+
+
+
+
+            </p>
+        </div>
+
+        
+        
+     </div>
+
+
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+        <h4>Website Design  <a href="https://devs-portfolioo.netlify.app">Dev Biswas</a></h4>
+        <p>Hello i am Dev Biswas.Iam an 
+            student of this school.i am now reading in class 8 section a.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/devbiswas01"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/dev__biswas/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+           <p>Made with <i class="fa-solid fa-copyright"></i> <a href="https://devs-portfolioo.netlify.app">Dev Biswas</a></p>
+    </section>
+
+
+    <!--Home menu toggle--> 
+
+   <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+
+        // Hide the menu automatically when any nav link is clicked (for mobile view)
+        var menuItems = document.querySelectorAll('.nav-links ul li a');
+        menuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                hidemenu();
+            });
+        });
+    </script>
+</body>
+</html>
